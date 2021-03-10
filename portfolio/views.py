@@ -5,3 +5,8 @@ from django.shortcuts import get_object_or_404, render, redirect
 
 def home(request):
     return render(request, 'portfolio/home.html')
+
+def project(request, project_id):
+    context = {}
+    if (project_id == 1):
+        return render(request,'portfolio/project-1.html')

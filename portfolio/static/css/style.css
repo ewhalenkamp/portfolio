@@ -120,6 +120,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#inner-page .icon-box div {
+  padding: 5px;
+  border: 3px solid gray;
+}
+
+#inner-page .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: #ffc451;
+}
+
+#inner-page .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#inner-page .icon-box h3 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#inner-page .icon-box h3 a:hover {
+  color: #ffc451;
+}
+
+#inner-page .icon-box:hover {
+  border-color: #ffc451;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -644,6 +677,16 @@ section {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
+}
+
+.minilogos img {
+  width: 50px;
+  height: 50px;
+  margin:20px;
+}
+
+.minilogos img:hover {
+  transform: scale(1.5)
 }
 
 .services .icon-box .icon {
