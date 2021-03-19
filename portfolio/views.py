@@ -6,5 +6,6 @@ from django.shortcuts import get_object_or_404, render, redirect
 def home(request):
     return render(request, 'portfolio/home.html')
 
-def project(request):
-    return render(request,'portfolio/project-1.html')
+def project(request, project_id):
+    templatename = 'project-'+str(project_id)
+    return render(request,'portfolio/'+templatename+'.html')
