@@ -635,8 +635,8 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features {
-  padding-top: 20px;
+.resume {
+  margin-top:50px;
 }
 
 .features .icon-box {
@@ -739,7 +739,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.uab.edu/news/images/javascript.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
