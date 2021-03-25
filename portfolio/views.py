@@ -9,3 +9,6 @@ def home(request):
 def project(request, project_id):
     templatename = 'project-'+str(project_id)
     return render(request,'portfolio/'+templatename+'.html')
+
+def musicplayer(request):
+    return render(request,'musicplayer/musicplayer.html')

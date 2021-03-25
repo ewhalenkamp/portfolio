@@ -1,0 +1,266 @@
+
+.searchBox {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.open .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.open .searchBox {
+    width: 300px;
+}
+
+.searchButton, .searchYTButton, .searchSpotifyButton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchYTButton, .searchSpotifyButton {
+    width:50px;
+    height:50px;
+    margin-top:6px;
+    background: white;
+    color : #2f3640;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    line-height: 60px;
+    width: 0px;
+
+}
+
+.videoResult {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.searchSection {
+       
+    border:5px solid black;
+    width:55%;
+    height:65%;
+    text-align:center;
+    background-color:white;
+    position:absolute;
+    left:5%;
+    top:5%;
+
+  }
+
+  .searchheader {
+      background-color:lightgray;
+      padding:5px;
+  }
+
+  .searchvideos {
+    position:relative;
+    height:78%;
+    overflow-y: scroll;
+  }
+
+  .queueheader {
+    background-color:lightgray;
+    padding:5px;
+    text-align:center;
+}
+
+.queuevideos {
+  position:relative;
+  height:84%;
+  overflow-y: scroll;
+}
+
+  .videoresult img {
+    padding-top: 2%;
+    width:98%;
+    height:200px;
+    border-radius:20px;
+  }
+
+  .author-queuebutton {
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+  }
+
+  .author-queuebutton button {
+      margin-right:10%;
+      height:30px;
+      margin-top:12px;
+  }
+
+  .author-queuebutton p {
+   margin-left:10%;
+    }
+
+.mediaplayer {
+    position:absolute;
+    bottom:3.5%;
+    left:5%;
+    width:30%;
+    height:20%;
+    border: 5px solid black;
+}
+
+.player {
+    position:relative;
+    margin:9px;
+}
+
+.playbuttonwrapper {
+    position: absolute;
+    top: 82%;
+    left: 54%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.playbutton, .pausebutton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.skipbuttonwrapper {
+    position: absolute;
+    top: 82%;
+    left: 46%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.skipbutton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.queuesectionwrapper {
+    position: absolute;
+    top:5%;
+    right:5%;
+    width:30%;
+    height:90%;
+    border: 5px solid black;
+}
+
+i {
+    font-size:32px;
+}
+.ri-play-fill .ri-pause-fill {
+    font-size:40px;
+}
+
+.videotile {
+    position: relative;
+    width:89%;
+    height:150px;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align:left;
+    font-size:14px;
+}
+
+.videotile>img {
+    position: relative;
+    margin:5px;
+    width:40%;
+    height:80%;
+    float:left;
+}
+
+.videotile>button {
+    position: absolute;
+    border-radius:5px;
+    right:5%
+}
+
+.left-column, .right-column {
+    width:44%;
+    float:left;
+    margin:3px;
+}
+
+.right-column {
+    float:right;
+    position: absolute;
+    left: 50%;
+}
+
+.videoinfo {
+    overflow-wrap: break-word;
+    left:50%;
+    width:55%;
+    text-align:left;
+    float:left;
+}
+
+.videotile > button {
+    position:absolute;
+    bottom:5%;
+    left:6%;
+}
+
+.videoinfo > p {
+    margin:0px;
+    overflow-y:hidden;
+    height:50%;
+}
+
+.queuesectionwrapper {
+    justify-content:bottom;
+}
+
+.mediaplayer > .videotile {
+    height:65%;
+    width:84%;
+}
+
+.mediaplayer > img {
+    height:100%;
+}
