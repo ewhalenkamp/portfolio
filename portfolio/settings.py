@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'webpack_loader',
+    'django_heroku'
 ]
 
 MIDDLEWARE = [
