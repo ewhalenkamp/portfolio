@@ -46,7 +46,7 @@
               <p><a href="https://pastebin.com/ft7sbtUU" target="_blank"
                   rel="noopener noreferrer">https://pastebin.com/ft7sbtUU</a></p>
               <h4>Usage</h4>
-              <p><i>$ lua nonogram.lua (int)gridSize (array)tableX (array)tableY</i></p>
+              <p><i>$ lua nonogram.lua (int)gridSize (string)tableX (string)tableY</i></p>
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-lg-2 order-1 content" data-aos="fade-up" data-aos-delay="100">
@@ -54,14 +54,14 @@
             <p>
               A nonogram is a puzzle in which you have to match the filled squares on a grid with a set of group
               constraints outlined on the axes.
-              For example, if a label on the X Axis reads [4,1], four filled squares must be adjacent to one another on
-              the column it denotes, followed by one extra filled square separated from the rest.
+              For example, if a label on the X Axis reads {% verbatim %}{4,1}{% endverbatim %}, four filled squares must be adjacent to one another on
+              the column or row it denotes, followed by one extra filled square separated from the rest.
               Take a look at the Project Demos for more examples and syntax for how to use this program,
             </p>
             <p>
-              This project was initially created as a commission for Roblox Studio, and was later adapted into a CLI for
+              This project was initially created as a commission for a puzzle within a pre-existing Roblox game, and was later adapted into a CLI for
               the purpose of demoing it here on my portfolio. Currently, this solver only supports nonogram puzzles that
-              are 10x10, and have at most 2 nodes of depth in thegrouping criteria. It uses a recursive backtracking
+              have at most 2 nodes of depth in the grouping criteria ({% verbatim %}{4,1} as opposed to {2,3,3}{% endverbatim %}). It uses a recursive backtracking
               algorithm that finds viable configurations and is optimized to skip where it believes a patch of inviable
               configurations might be.
             </p>

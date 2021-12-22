@@ -60,20 +60,18 @@
                         <p>This project lists each and every Pok&eacute;mon instance until the start of the current
                             Generation, Gen VIII. By clicking on a
                             Pok&eacute;mon's image, the site user can view individual and detailed information about
-                            that Pok&eacute;, including their stats,
+                            that Pok&eacute;mon, including their stats,
                             moves, abilities, and more.
                         </p>
-                        <p>This Pok&eacute;dex version is a successor to a class project I completed just under one year
-                            ago for a semester project.
-                            As it was an introductory programming course and I didn't know how to use web technologies
-                            at the time, I implemented this
-                            project by compiling nearly a thousand HTML files for each Pok&eacute;mon instance with a
-                            Java program. The same database I used
-                            in that version of the project came into play in creating an API with Springboot. Lastly, I
-                            created a Django backend to serve
-                            the original version's HTML with context instead of hard-written values.
+                        <p>This Pok&eacute;dex succeeds a Pok&eacute;dex I created for a class project.
+                            As it was an introductory programming course and I didn't know how to use modern web technologies
+                            at the time, its initial implementation was completed by compiling nearly a thousand HTML files using a Java program. 
                         </p>
-                        <p>This was my first experience creating an API, and I have certainly learned a lot from it.
+                        <p>
+                            To update this project, I refactored my Pok&eacute;mon Java database to accompany a Springboot API, and then created a Django backend to serve
+                            the HTML with API-provided context instead of hard-written values. This brought down the number of total HTML files from over a thousand to just two.
+                        </p>
+                        <p>This was my first experience creating an API, and I was able to apply this to future proprietary APIs (namely, RecordWall).
                             Projects hosted on
                             Heroku's free version are slow to initially load, which obviously isn't ideal for an API.
                             Nonetheless, this fact lead
