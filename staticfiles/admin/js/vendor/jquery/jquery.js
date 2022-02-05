@@ -1,15 +1,27 @@
 /*!
+<<<<<<< HEAD
  * jQuery JavaScript Library v3.6.0
+=======
+ * jQuery JavaScript Library v3.5.1
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
  * https://jquery.com/
  *
  * Includes Sizzle.js
  * https://sizzlejs.com/
  *
+<<<<<<< HEAD
  * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
  * Date: 2021-03-02T17:08Z
+=======
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2020-05-04T22:49Z
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
  */
 ( function( global, factory ) {
 
@@ -76,6 +88,7 @@ var support = {};
 
 var isFunction = function isFunction( obj ) {
 
+<<<<<<< HEAD
 		// Support: Chrome <=57, Firefox <=52
 		// In some browsers, typeof returns "function" for HTML <object> elements
 		// (i.e., `typeof document.createElement( "object" ) === "function"`).
@@ -86,6 +99,14 @@ var isFunction = function isFunction( obj ) {
 		return typeof obj === "function" && typeof obj.nodeType !== "number" &&
 			typeof obj.item !== "function";
 	};
+=======
+      // Support: Chrome <=57, Firefox <=52
+      // In some browsers, typeof returns "function" for HTML <object> elements
+      // (i.e., `typeof document.createElement( "object" ) === "function"`).
+      // We don't want to classify *any* DOM node as a function.
+      return typeof obj === "function" && typeof obj.nodeType !== "number";
+  };
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 
 var isWindow = function isWindow( obj ) {
@@ -151,7 +172,11 @@ function toType( obj ) {
 
 
 var
+<<<<<<< HEAD
 	version = "3.6.0",
+=======
+	version = "3.5.1",
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -405,7 +430,11 @@ jQuery.extend( {
 			if ( isArrayLike( Object( arr ) ) ) {
 				jQuery.merge( ret,
 					typeof arr === "string" ?
+<<<<<<< HEAD
 						[ arr ] : arr
+=======
+					[ arr ] : arr
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				);
 			} else {
 				push.call( ret, arr );
@@ -500,9 +529,15 @@ if ( typeof Symbol === "function" ) {
 
 // Populate the class2type map
 jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
+<<<<<<< HEAD
 	function( _i, name ) {
 		class2type[ "[object " + name + "]" ] = name.toLowerCase();
 	} );
+=======
+function( _i, name ) {
+	class2type[ "[object " + name + "]" ] = name.toLowerCase();
+} );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 function isArrayLike( obj ) {
 
@@ -522,14 +557,22 @@ function isArrayLike( obj ) {
 }
 var Sizzle =
 /*!
+<<<<<<< HEAD
  * Sizzle CSS Selector Engine v2.3.6
+=======
+ * Sizzle CSS Selector Engine v2.3.5
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
  * https://sizzlejs.com/
  *
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://js.foundation/
  *
+<<<<<<< HEAD
  * Date: 2021-02-16
+=======
+ * Date: 2020-03-14
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
  */
 ( function( window ) {
 var i,
@@ -1112,8 +1155,13 @@ support = Sizzle.support = {};
  * @returns {Boolean} True iff elem is a non-HTML XML node
  */
 isXML = Sizzle.isXML = function( elem ) {
+<<<<<<< HEAD
 	var namespace = elem && elem.namespaceURI,
 		docElem = elem && ( elem.ownerDocument || elem ).documentElement;
+=======
+	var namespace = elem.namespaceURI,
+		docElem = ( elem.ownerDocument || elem ).documentElement;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 	// Support: IE <=8
 	// Assume HTML when documentElement doesn't yet exist, such as inside loading iframes
@@ -3028,9 +3076,15 @@ var rneedsContext = jQuery.expr.match.needsContext;
 
 function nodeName( elem, name ) {
 
+<<<<<<< HEAD
 	return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
 
 }
+=======
+  return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
+
+};
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
@@ -4001,8 +4055,13 @@ jQuery.extend( {
 			resolveContexts = Array( i ),
 			resolveValues = slice.call( arguments ),
 
+<<<<<<< HEAD
 			// the primary Deferred
 			primary = jQuery.Deferred(),
+=======
+			// the master Deferred
+			master = jQuery.Deferred(),
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 			// subordinate callback factory
 			updateFunc = function( i ) {
@@ -4010,13 +4069,18 @@ jQuery.extend( {
 					resolveContexts[ i ] = this;
 					resolveValues[ i ] = arguments.length > 1 ? slice.call( arguments ) : value;
 					if ( !( --remaining ) ) {
+<<<<<<< HEAD
 						primary.resolveWith( resolveContexts, resolveValues );
+=======
+						master.resolveWith( resolveContexts, resolveValues );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					}
 				};
 			};
 
 		// Single- and empty arguments are adopted like Promise.resolve
 		if ( remaining <= 1 ) {
+<<<<<<< HEAD
 			adoptValue( singleValue, primary.done( updateFunc( i ) ).resolve, primary.reject,
 				!remaining );
 
@@ -4025,15 +4089,32 @@ jQuery.extend( {
 				isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
 
 				return primary.then();
+=======
+			adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject,
+				!remaining );
+
+			// Use .then() to unwrap secondary thenables (cf. gh-3000)
+			if ( master.state() === "pending" ||
+				isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+
+				return master.then();
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			}
 		}
 
 		// Multiple arguments are aggregated like Promise.all array elements
 		while ( i-- ) {
+<<<<<<< HEAD
 			adoptValue( resolveValues[ i ], updateFunc( i ), primary.reject );
 		}
 
 		return primary.promise();
+=======
+			adoptValue( resolveValues[ i ], updateFunc( i ), master.reject );
+		}
+
+		return master.promise();
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 	}
 } );
 
@@ -4184,8 +4265,13 @@ var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
 			for ( ; i < len; i++ ) {
 				fn(
 					elems[ i ], key, raw ?
+<<<<<<< HEAD
 						value :
 						value.call( elems[ i ], i, fn( elems[ i ], key ) )
+=======
+					value :
+					value.call( elems[ i ], i, fn( elems[ i ], key ) )
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				);
 			}
 		}
@@ -5093,7 +5179,14 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 }
 
 
+<<<<<<< HEAD
 var rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+=======
+var
+	rkeyEvent = /^key/,
+	rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
+	rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 function returnTrue() {
 	return true;
@@ -5388,8 +5481,13 @@ jQuery.event = {
 			event = jQuery.event.fix( nativeEvent ),
 
 			handlers = (
+<<<<<<< HEAD
 				dataPriv.get( this, "events" ) || Object.create( null )
 			)[ event.type ] || [],
+=======
+					dataPriv.get( this, "events" ) || Object.create( null )
+				)[ event.type ] || [],
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			special = jQuery.event.special[ event.type ] || {};
 
 		// Use the fix-ed jQuery.Event rather than the (read-only) native event
@@ -5513,12 +5611,20 @@ jQuery.event = {
 			get: isFunction( hook ) ?
 				function() {
 					if ( this.originalEvent ) {
+<<<<<<< HEAD
 						return hook( this.originalEvent );
+=======
+							return hook( this.originalEvent );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					}
 				} :
 				function() {
 					if ( this.originalEvent ) {
+<<<<<<< HEAD
 						return this.originalEvent[ name ];
+=======
+							return this.originalEvent[ name ];
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					}
 				},
 
@@ -5657,6 +5763,7 @@ function leverageNative( el, type, expectSync ) {
 						// Cancel the outer synthetic event
 						event.stopImmediatePropagation();
 						event.preventDefault();
+<<<<<<< HEAD
 
 						// Support: Chrome 86+
 						// In Chrome, if an element having a focusout handler is blurred by
@@ -5664,6 +5771,9 @@ function leverageNative( el, type, expectSync ) {
 						// that handler calls `.remove()` on the element, the data is cleared,
 						// leaving `result` undefined. We need to guard against this.
 						return result && result.value;
+=======
+						return result.value;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					}
 
 				// If this is an inner synthetic event for an event with a bubbling surrogate
@@ -5828,7 +5938,38 @@ jQuery.each( {
 	targetTouches: true,
 	toElement: true,
 	touches: true,
+<<<<<<< HEAD
 	which: true
+=======
+
+	which: function( event ) {
+		var button = event.button;
+
+		// Add which for key events
+		if ( event.which == null && rkeyEvent.test( event.type ) ) {
+			return event.charCode != null ? event.charCode : event.keyCode;
+		}
+
+		// Add which for click: 1 === left; 2 === middle; 3 === right
+		if ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {
+			if ( button & 1 ) {
+				return 1;
+			}
+
+			if ( button & 2 ) {
+				return 3;
+			}
+
+			if ( button & 4 ) {
+				return 2;
+			}
+
+			return 0;
+		}
+
+		return event.which;
+	}
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }, jQuery.event.addProp );
 
 jQuery.each( { focus: "focusin", blur: "focusout" }, function( type, delegateType ) {
@@ -5854,12 +5995,15 @@ jQuery.each( { focus: "focusin", blur: "focusout" }, function( type, delegateTyp
 			return true;
 		},
 
+<<<<<<< HEAD
 		// Suppress native focus or blur as it's already being fired
 		// in leverageNative.
 		_default: function() {
 			return true;
 		},
 
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 		delegateType: delegateType
 	};
 } );
@@ -6527,10 +6671,13 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 		// set in CSS while `offset*` properties report correct values.
 		// Behavior in IE 9 is more subtle than in newer versions & it passes
 		// some versions of this test; make sure not to make it pass there!
+<<<<<<< HEAD
 		//
 		// Support: Firefox 70+
 		// Only Firefox includes border widths
 		// in computed dimensions. (gh-4529)
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 		reliableTrDimensions: function() {
 			var table, tr, trChild, trStyle;
 			if ( reliableTrDimensionsVal == null ) {
@@ -6538,6 +6685,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 				tr = document.createElement( "tr" );
 				trChild = document.createElement( "div" );
 
+<<<<<<< HEAD
 				table.style.cssText = "position:absolute;left:-11111px;border-collapse:separate";
 				tr.style.cssText = "border:1px solid";
 
@@ -6555,15 +6703,25 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 				// gets around this issue.
 				trChild.style.display = "block";
 
+=======
+				table.style.cssText = "position:absolute;left:-11111px";
+				tr.style.height = "1px";
+				trChild.style.height = "9px";
+
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				documentElement
 					.appendChild( table )
 					.appendChild( tr )
 					.appendChild( trChild );
 
 				trStyle = window.getComputedStyle( tr );
+<<<<<<< HEAD
 				reliableTrDimensionsVal = ( parseInt( trStyle.height, 10 ) +
 					parseInt( trStyle.borderTopWidth, 10 ) +
 					parseInt( trStyle.borderBottomWidth, 10 ) ) === tr.offsetHeight;
+=======
+				reliableTrDimensionsVal = parseInt( trStyle.height ) > 3;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 				documentElement.removeChild( table );
 			}
@@ -7027,10 +7185,17 @@ jQuery.each( [ "height", "width" ], function( _i, dimension ) {
 					// Running getBoundingClientRect on a disconnected node
 					// in IE throws an error.
 					( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+<<<<<<< HEAD
 					swap( elem, cssShow, function() {
 						return getWidthOrHeight( elem, dimension, extra );
 					} ) :
 					getWidthOrHeight( elem, dimension, extra );
+=======
+						swap( elem, cssShow, function() {
+							return getWidthOrHeight( elem, dimension, extra );
+						} ) :
+						getWidthOrHeight( elem, dimension, extra );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			}
 		},
 
@@ -7089,7 +7254,11 @@ jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
 					swap( elem, { marginLeft: 0 }, function() {
 						return elem.getBoundingClientRect().left;
 					} )
+<<<<<<< HEAD
 			) + "px";
+=======
+				) + "px";
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 		}
 	}
 );
@@ -7228,7 +7397,11 @@ Tween.propHooks = {
 			if ( jQuery.fx.step[ tween.prop ] ) {
 				jQuery.fx.step[ tween.prop ]( tween );
 			} else if ( tween.elem.nodeType === 1 && (
+<<<<<<< HEAD
 				jQuery.cssHooks[ tween.prop ] ||
+=======
+					jQuery.cssHooks[ tween.prop ] ||
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					tween.elem.style[ finalPropName( tween.prop ) ] != null ) ) {
 				jQuery.style( tween.elem, tween.prop, tween.now + tween.unit );
 			} else {
@@ -7473,7 +7646,11 @@ function defaultPrefilter( elem, props, opts ) {
 
 			anim.done( function() {
 
+<<<<<<< HEAD
 				/* eslint-enable no-loop-func */
+=======
+			/* eslint-enable no-loop-func */
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 				// The final step of a "hide" animation is actually hiding the element
 				if ( !hidden ) {
@@ -7593,7 +7770,11 @@ function Animation( elem, properties, options ) {
 			tweens: [],
 			createTween: function( prop, end ) {
 				var tween = jQuery.Tween( elem, animation.opts, prop, end,
+<<<<<<< HEAD
 					animation.opts.specialEasing[ prop ] || animation.opts.easing );
+=======
+						animation.opts.specialEasing[ prop ] || animation.opts.easing );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				animation.tweens.push( tween );
 				return tween;
 			},
@@ -7766,8 +7947,12 @@ jQuery.fn.extend( {
 					anim.stop( true );
 				}
 			};
+<<<<<<< HEAD
 
 		doAnimation.finish = doAnimation;
+=======
+			doAnimation.finish = doAnimation;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 		return empty || optall.queue === false ?
 			this.each( doAnimation ) :
@@ -8407,8 +8592,13 @@ jQuery.fn.extend( {
 				if ( this.setAttribute ) {
 					this.setAttribute( "class",
 						className || value === false ?
+<<<<<<< HEAD
 							"" :
 							dataPriv.get( this, "__className__" ) || ""
+=======
+						"" :
+						dataPriv.get( this, "__className__" ) || ""
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 					);
 				}
 			}
@@ -8423,7 +8613,11 @@ jQuery.fn.extend( {
 		while ( ( elem = this[ i++ ] ) ) {
 			if ( elem.nodeType === 1 &&
 				( " " + stripAndCollapse( getClass( elem ) ) + " " ).indexOf( className ) > -1 ) {
+<<<<<<< HEAD
 				return true;
+=======
+					return true;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			}
 		}
 
@@ -8713,7 +8907,13 @@ jQuery.extend( jQuery.event, {
 				special.bindType || type;
 
 			// jQuery handler
+<<<<<<< HEAD
 			handle = ( dataPriv.get( cur, "events" ) || Object.create( null ) )[ event.type ] &&
+=======
+			handle = (
+					dataPriv.get( cur, "events" ) || Object.create( null )
+				)[ event.type ] &&
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				dataPriv.get( cur, "handle" );
 			if ( handle ) {
 				handle.apply( cur, data );
@@ -8860,7 +9060,11 @@ var rquery = ( /\?/ );
 
 // Cross-browser xml parsing
 jQuery.parseXML = function( data ) {
+<<<<<<< HEAD
 	var xml, parserErrorElem;
+=======
+	var xml;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 	if ( !data || typeof data !== "string" ) {
 		return null;
 	}
@@ -8869,6 +9073,7 @@ jQuery.parseXML = function( data ) {
 	// IE throws on parseFromString with invalid input.
 	try {
 		xml = ( new window.DOMParser() ).parseFromString( data, "text/xml" );
+<<<<<<< HEAD
 	} catch ( e ) {}
 
 	parserErrorElem = xml && xml.getElementsByTagName( "parsererror" )[ 0 ];
@@ -8880,6 +9085,14 @@ jQuery.parseXML = function( data ) {
 				} ).join( "\n" ) :
 				data
 		) );
+=======
+	} catch ( e ) {
+		xml = undefined;
+	}
+
+	if ( !xml || xml.getElementsByTagName( "parsererror" ).length ) {
+		jQuery.error( "Invalid XML: " + data );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 	}
 	return xml;
 };
@@ -8980,14 +9193,24 @@ jQuery.fn.extend( {
 			// Can add propHook for "elements" to filter or add form elements
 			var elements = jQuery.prop( this, "elements" );
 			return elements ? jQuery.makeArray( elements ) : this;
+<<<<<<< HEAD
 		} ).filter( function() {
+=======
+		} )
+		.filter( function() {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			var type = this.type;
 
 			// Use .is( ":disabled" ) so that fieldset[disabled] works
 			return this.name && !jQuery( this ).is( ":disabled" ) &&
 				rsubmittable.test( this.nodeName ) && !rsubmitterTypes.test( type ) &&
 				( this.checked || !rcheckableType.test( type ) );
+<<<<<<< HEAD
 		} ).map( function( _i, elem ) {
+=======
+		} )
+		.map( function( _i, elem ) {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			var val = jQuery( this ).val();
 
 			if ( val == null ) {
@@ -9040,8 +9263,12 @@ var
 
 	// Anchor tag for parsing the document origin
 	originAnchor = document.createElement( "a" );
+<<<<<<< HEAD
 
 originAnchor.href = location.href;
+=======
+	originAnchor.href = location.href;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 // Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
 function addToPrefiltersOrTransports( structure ) {
@@ -9422,8 +9649,13 @@ jQuery.extend( {
 			// Context for global events is callbackContext if it is a DOM node or jQuery collection
 			globalEventContext = s.context &&
 				( callbackContext.nodeType || callbackContext.jquery ) ?
+<<<<<<< HEAD
 				jQuery( callbackContext ) :
 				jQuery.event,
+=======
+					jQuery( callbackContext ) :
+					jQuery.event,
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 			// Deferreds
 			deferred = jQuery.Deferred(),
@@ -9735,10 +9967,15 @@ jQuery.extend( {
 				response = ajaxHandleResponses( s, jqXHR, responses );
 			}
 
+<<<<<<< HEAD
 			// Use a noop converter for missing script but not if jsonp
 			if ( !isSuccess &&
 				jQuery.inArray( "script", s.dataTypes ) > -1 &&
 				jQuery.inArray( "json", s.dataTypes ) < 0 ) {
+=======
+			// Use a noop converter for missing script
+			if ( !isSuccess && jQuery.inArray( "script", s.dataTypes ) > -1 ) {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 				s.converters[ "text script" ] = function() {};
 			}
 
@@ -10476,6 +10713,15 @@ jQuery.offset = {
 			options.using.call( elem, props );
 
 		} else {
+<<<<<<< HEAD
+=======
+			if ( typeof props.top === "number" ) {
+				props.top += "px";
+			}
+			if ( typeof props.left === "number" ) {
+				props.left += "px";
+			}
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 			curElem.css( props );
 		}
 	}
@@ -10644,11 +10890,16 @@ jQuery.each( [ "top", "left" ], function( _i, prop ) {
 
 // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
 jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
+<<<<<<< HEAD
 	jQuery.each( {
 		padding: "inner" + name,
 		content: type,
 		"": "outer" + name
 	}, function( defaultExtra, funcName ) {
+=======
+	jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
+		function( defaultExtra, funcName ) {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 		// Margin is only for outerHeight, outerWidth
 		jQuery.fn[ funcName ] = function( margin, value ) {
@@ -10733,8 +10984,12 @@ jQuery.fn.extend( {
 	}
 } );
 
+<<<<<<< HEAD
 jQuery.each(
 	( "blur focus focusin focusout resize scroll click dblclick " +
+=======
+jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
 	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
 	function( _i, name ) {
@@ -10745,8 +11000,12 @@ jQuery.each(
 				this.on( name, null, data, fn ) :
 				this.trigger( name );
 		};
+<<<<<<< HEAD
 	}
 );
+=======
+	} );
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 
 
 

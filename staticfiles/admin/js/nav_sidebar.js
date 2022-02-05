@@ -36,6 +36,7 @@
             main.classList.toggle('shifted');
         });
     }
+<<<<<<< HEAD
 
     function initSidebarQuickFilter() {
         const options = [];
@@ -90,4 +91,6 @@
     }
     window.initSidebarQuickFilter = initSidebarQuickFilter;
     initSidebarQuickFilter();
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }

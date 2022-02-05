@@ -21,6 +21,7 @@ depends on core.js for utility functions like removeChildren or quickElement
             gettext('November'),
             gettext('December')
         ],
+<<<<<<< HEAD
         monthsOfYearAbbrev: [
             pgettext('abbrev. month January', 'Jan'),
             pgettext('abbrev. month February', 'Feb'),
@@ -35,6 +36,8 @@ depends on core.js for utility functions like removeChildren or quickElement
             pgettext('abbrev. month November', 'Nov'),
             pgettext('abbrev. month December', 'Dec')
         ],
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         daysOfWeek: [
             pgettext('one letter Sunday', 'S'),
             pgettext('one letter Monday', 'M'),

@@ -1,7 +1,11 @@
 /* LOGIN FORM */
 
 .login {
+<<<<<<< HEAD
     background: var(--darkened-bg);
+=======
+    background: #f8f8f8;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     height: auto;
 }
 
@@ -13,11 +17,18 @@
 
 .login #header h1 {
     font-size: 18px;
+<<<<<<< HEAD
     margin: 0;
 }
 
 .login #header h1 a {
     color: var(--header-link-color);
+=======
+}
+
+.login #header h1 a {
+    color: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .login #content {
@@ -25,8 +36,13 @@
 }
 
 .login #container {
+<<<<<<< HEAD
     background: var(--body-bg);
     border: 1px solid var(--hairline-color);
+=======
+    background: #fff;
+    border: 1px solid #eaeaea;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     overflow: hidden;
     width: 28em;
@@ -35,6 +51,7 @@
     height: auto;
 }
 
+<<<<<<< HEAD
 .login .form-row {
     padding: 4px 0;
 }
@@ -45,15 +62,53 @@
 }
 
 .login .form-row #id_username, .login .form-row #id_password {
+=======
+.login #content-main {
+    width: 100%;
+}
+
+.login .form-row {
+    padding: 4px 0;
+    float: left;
+    width: 100%;
+    border-bottom: none;
+}
+
+.login .form-row label {
+    padding-right: 0.5em;
+    line-height: 2em;
+    font-size: 1em;
+    clear: both;
+    color: #333;
+}
+
+.login .form-row #id_username, .login .form-row #id_password {
+    clear: both;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .login .submit-row {
     padding: 1em 0 0 0;
     margin: 0;
     text-align: center;
+=======
+.login span.help {
+    font-size: 10px;
+    display: block;
+}
+
+.login .submit-row {
+    clear: both;
+    padding: 1em 0 0 9.4em;
+    margin: 0;
+    border: none;
+    background: none;
+    text-align: left;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .login .password-reset-link {

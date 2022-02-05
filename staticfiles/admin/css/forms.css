@@ -6,7 +6,11 @@
     overflow: hidden;
     padding: 10px;
     font-size: 13px;
+<<<<<<< HEAD
     border-bottom: 1px solid var(--hairline-color);
+=======
+    border-bottom: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .form-row img, .form-row input {
@@ -22,17 +26,32 @@ form .form-row p {
     padding-left: 0;
 }
 
+<<<<<<< HEAD
+=======
+.hidden {
+    display: none;
+}
+
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 /* FORM LABELS */
 
 label {
     font-weight: normal;
+<<<<<<< HEAD
     color: var(--body-quiet-color);
+=======
+    color: #666;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-size: 13px;
 }
 
 .required label, label.required {
     font-weight: bold;
+<<<<<<< HEAD
     color: var(--body-fg);
+=======
+    color: #333;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 /* RADIO BUTTONS */
@@ -84,7 +103,10 @@ form ul.inline li {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 170px;
+<<<<<<< HEAD
     overflow-wrap: break-word;
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .aligned ul label {
@@ -216,24 +238,41 @@ fieldset.collapsed h2, fieldset.collapsed {
 }
 
 fieldset.collapsed {
+<<<<<<< HEAD
     border: 1px solid var(--hairline-color);
+=======
+    border: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     overflow: hidden;
 }
 
 fieldset.collapsed h2 {
+<<<<<<< HEAD
     background: var(--darkened-bg);
     color: var(--body-quiet-color);
 }
 
 fieldset .collapse-toggle {
     color: var(--header-link-color);
+=======
+    background: #f8f8f8;
+    color: #666;
+}
+
+fieldset .collapse-toggle {
+    color: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 fieldset.collapsed .collapse-toggle {
     background: transparent;
     display: inline;
+<<<<<<< HEAD
     color: var(--link-fg);
+=======
+    color: #447e9b;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 /* MONOSPACE TEXTAREAS */
@@ -247,8 +286,13 @@ fieldset.monospace textarea {
 .submit-row {
     padding: 12px 14px;
     margin: 0 0 20px;
+<<<<<<< HEAD
     background: var(--darkened-bg);
     border: 1px solid var(--hairline-color);
+=======
+    background: #f8f8f8;
+    border: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     text-align: right;
     overflow: hidden;
@@ -280,35 +324,59 @@ body.popup .submit-row {
 
 .submit-row a.deletelink {
     display: block;
+<<<<<<< HEAD
     background: var(--delete-button-bg);
+=======
+    background: #ba2121;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     padding: 10px 15px;
     height: 15px;
     line-height: 15px;
+<<<<<<< HEAD
     color: var(--button-fg);
+=======
+    color: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .submit-row a.closelink {
     display: inline-block;
+<<<<<<< HEAD
     background: var(--close-button-bg);
+=======
+    background: #bbbbbb;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     padding: 10px 15px;
     height: 15px;
     line-height: 15px;
     margin: 0 0 0 5px;
+<<<<<<< HEAD
     color: var(--button-fg);
+=======
+    color: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .submit-row a.deletelink:focus,
 .submit-row a.deletelink:hover,
 .submit-row a.deletelink:active {
+<<<<<<< HEAD
     background: var(--delete-button-hover-bg);
+=======
+    background: #a41515;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .submit-row a.closelink:focus,
 .submit-row a.closelink:hover,
 .submit-row a.closelink:active {
+<<<<<<< HEAD
     background: var(--close-button-hover-bg);
+=======
+    background: #aaaaaa;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 /* CUSTOM FORM FIELDS */
@@ -387,12 +455,21 @@ body.popup .submit-row {
 
 .inline-related h3 {
     margin: 0;
+<<<<<<< HEAD
     color: var(--body-quiet-color);
     padding: 5px;
     font-size: 13px;
     background: var(--darkened-bg);
     border-top: 1px solid var(--hairline-color);
     border-bottom: 1px solid var(--hairline-color);
+=======
+    color: #666;
+    padding: 5px;
+    font-size: 13px;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .inline-related h3 span.delete {
@@ -406,7 +483,11 @@ body.popup .submit-row {
 
 .inline-related fieldset {
     margin: 0;
+<<<<<<< HEAD
     background: var(--body-bg);
+=======
+    background: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border: none;
     width: 100%;
 }
@@ -418,7 +499,11 @@ body.popup .submit-row {
     text-align: left;
     font-weight: bold;
     background: #bcd;
+<<<<<<< HEAD
     color: var(--body-bg);
+=======
+    color: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .inline-group .tabular fieldset.module {
@@ -427,7 +512,10 @@ body.popup .submit-row {
 
 .inline-related.tabular fieldset.module table {
     width: 100%;
+<<<<<<< HEAD
     overflow-x: scroll;
+=======
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .last-related fieldset {
@@ -457,7 +545,11 @@ body.popup .submit-row {
     overflow: hidden;
     font-size: 9px;
     font-weight: bold;
+<<<<<<< HEAD
     color: var(--body-quiet-color);
+=======
+    color: #666;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     _width: 700px;
 }
 
@@ -474,15 +566,26 @@ body.popup .submit-row {
 
 .inline-group div.add-row,
 .inline-group .tabular tr.add-row td {
+<<<<<<< HEAD
     color: var(--body-quiet-color);
     background: var(--darkened-bg);
     padding: 8px 10px;
     border-bottom: 1px solid var(--hairline-color);
+=======
+    color: #666;
+    background: #f8f8f8;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .inline-group .tabular tr.add-row td {
     padding: 8px 10px;
+<<<<<<< HEAD
     border-bottom: 1px solid var(--hairline-color);
+=======
+    border-bottom: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .inline-group ul.tools a.add,

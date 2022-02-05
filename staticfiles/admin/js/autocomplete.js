@@ -1,6 +1,7 @@
 'use strict';
 {
     const $ = django.jQuery;
+<<<<<<< HEAD
 
     $.fn.djangoAdminSelect2 = function() {
         $.each(this, function(i, element) {
@@ -17,6 +18,27 @@
                     }
                 }
             });
+=======
+    const init = function($element, options) {
+        const settings = $.extend({
+            ajax: {
+                data: function(params) {
+                    return {
+                        term: params.term,
+                        page: params.page
+                    };
+                }
+            }
+        }, options);
+        $element.select2(settings);
+    };
+
+    $.fn.djangoAdminSelect2 = function(options) {
+        const settings = $.extend({}, options);
+        $.each(this, function(i, element) {
+            const $element = $(element);
+            init($element, settings);
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         });
         return this;
     };

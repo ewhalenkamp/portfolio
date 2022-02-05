@@ -134,7 +134,12 @@
             for (const lookup of ALL_DOWNCODE_MAPS) {
                 Object.assign(Downcoder.map, lookup);
             }
+<<<<<<< HEAD
             Downcoder.regex = new RegExp(Object.keys(Downcoder.map).join('|'), 'g');
+=======
+            Downcoder.chars = Object.keys(Downcoder.map);
+            Downcoder.regex = new RegExp(Downcoder.chars.join('|'), 'g');
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         }
     };
 
@@ -148,9 +153,29 @@
 
     function URLify(s, num_chars, allowUnicode) {
         // changes, e.g., "Petty theft" to "petty-theft"
+<<<<<<< HEAD
         if (!allowUnicode) {
             s = downcode(s);
         }
+=======
+        // remove all these words from the string before urlifying
+        if (!allowUnicode) {
+            s = downcode(s);
+        }
+        const hasUnicodeChars = /[^\u0000-\u007f]/.test(s);
+        // Remove English words only if the string contains ASCII (English)
+        // characters.
+        if (!hasUnicodeChars) {
+            const removeList = [
+                "a", "an", "as", "at", "before", "but", "by", "for", "from",
+                "is", "in", "into", "like", "of", "off", "on", "onto", "per",
+                "since", "than", "the", "this", "that", "to", "up", "via",
+                "with"
+            ];
+            const r = new RegExp('\\b(' + removeList.join('|') + ')\\b', 'gi');
+            s = s.replace(r, '');
+        }
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         s = s.toLowerCase(); // convert to lowercase
         // if downcode doesn't hit, the char will be stripped here
         if (allowUnicode) {

@@ -93,14 +93,22 @@ input[type="submit"], button {
 
     /* Changelist */
 
+<<<<<<< HEAD
     #toolbar {
+=======
+    #changelist #toolbar {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         border: none;
         padding: 15px;
     }
 
     #changelist-search > div {
         display: flex;
+<<<<<<< HEAD
         flex-wrap: nowrap;
+=======
+        flex-wrap: wrap;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         max-width: 480px;
     }
 
@@ -108,13 +116,18 @@ input[type="submit"], button {
         line-height: 22px;
     }
 
+<<<<<<< HEAD
     #toolbar form #searchbar {
+=======
+    #changelist #toolbar form #searchbar {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         flex: 1 0 auto;
         width: 0;
         height: 22px;
         margin: 0 10px 0 6px;
     }
 
+<<<<<<< HEAD
     #toolbar form input[type=submit] {
         flex: 0 1 auto;
     }
@@ -122,6 +135,10 @@ input[type="submit"], button {
     #changelist-search .quiet {
         width: 0;
         flex: 1 0 auto;
+=======
+    #changelist-search .quiet {
+        width: 100%;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         margin: 5px 0 0 25px;
     }
 
@@ -140,7 +157,11 @@ input[type="submit"], button {
     }
 
     #changelist .actions select {
+<<<<<<< HEAD
         background: var(--body-bg);
+=======
+        background: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     #changelist .actions .button {
@@ -157,16 +178,29 @@ input[type="submit"], button {
     }
 
     #changelist-filter {
+<<<<<<< HEAD
         flex-basis: 200px;
+=======
+        width: 200px;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     .change-list .filtered .results,
     .change-list .filtered .paginator,
     .filtered #toolbar,
     .filtered .actions,
+<<<<<<< HEAD
 
     #changelist .paginator {
         border-top-color: var(--hairline-color); /* XXX Is this used at all? */
+=======
+    .filtered div.xfull {
+        margin-right: 230px;
+    }
+
+    #changelist .paginator {
+        border-top-color: #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     #changelist .results + .paginator {
@@ -213,11 +247,19 @@ input[type="submit"], button {
     fieldset .fieldBox + .fieldBox {
         margin-top: 10px;
         padding-top: 10px;
+<<<<<<< HEAD
         border-top: 1px solid var(--hairline-color);
     }
 
     textarea {
         max-width: 100%;
+=======
+        border-top: 1px solid #eee;
+    }
+
+    textarea {
+        max-width: 518px;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         max-height: 120px;
     }
 
@@ -399,11 +441,19 @@ input[type="submit"], button {
     .datetime .timezonewarning {
         display: block;
         font-size: 11px;
+<<<<<<< HEAD
         color: var(--body-quiet-color);
     }
 
     .datetimeshortcuts {
         color: var(--border-color); /* XXX Redundant, .datetime span also sets #ccc */
+=======
+        color: #999;
+    }
+
+    .datetimeshortcuts {
+        color: #ccc;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     .form-row .datetime input.vDateField, .form-row .datetime input.vTimeField {
@@ -502,6 +552,7 @@ input[type="submit"], button {
     /* Changelist */
 
     #changelist {
+<<<<<<< HEAD
         align-items: stretch;
         flex-direction: column;
     }
@@ -512,6 +563,27 @@ input[type="submit"], button {
 
     #changelist-filter {
         margin-left: 0;
+=======
+        display: flex;
+        flex-direction: column;
+    }
+
+    #changelist #toolbar {
+        order: 1;
+        padding: 10px;
+    }
+
+    #changelist .xfull {
+        order: 2;
+    }
+
+    #changelist-form {
+        order: 3;
+    }
+
+    #changelist-filter {
+        order: 4;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     #changelist .actions label {
@@ -527,6 +599,14 @@ input[type="submit"], button {
         flex: 1 0 100%;
     }
 
+<<<<<<< HEAD
+=======
+    .change-list .filtered .results, .change-list .filtered .paginator,
+    .filtered #toolbar, .filtered .actions, .filtered div.xfull {
+        margin-right: 0;
+    }
+
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     #changelist-filter {
         position: static;
         width: auto;
@@ -655,7 +735,11 @@ input[type="submit"], button {
         margin-bottom: -3px;
     }
 
+<<<<<<< HEAD
     form .aligned ul.radiolist:not(.inline) li + li {
+=======
+    form .aligned ul.radiolist li + li {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         margin-top: 5px;
     }
 
@@ -740,7 +824,11 @@ input[type="submit"], button {
     /* Inlines */
 
     .inline-group[data-inline-type="stacked"] .inline-related {
+<<<<<<< HEAD
         border: 1px solid var(--hairline-color);
+=======
+        border: 2px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         border-radius: 4px;
         margin-top: 15px;
         overflow: auto;
@@ -750,10 +838,18 @@ input[type="submit"], button {
         box-sizing: border-box;
     }
 
+<<<<<<< HEAD
+=======
+    .inline-group[data-inline-type="stacked"] .inline-related + .inline-related {
+        margin-top: 30px;
+    }
+
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     .inline-group[data-inline-type="stacked"] .inline-related .module {
         padding: 0 10px;
     }
 
+<<<<<<< HEAD
     .inline-group[data-inline-type="stacked"] .inline-related .module .form-row {
         border-top: 1px solid var(--hairline-color);
         border-bottom: none;
@@ -763,6 +859,12 @@ input[type="submit"], button {
         border-top: none;
     }
 
+=======
+    .inline-group[data-inline-type="stacked"] .inline-related .module .form-row:last-child {
+        border-bottom: none;
+    }
+
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     .inline-group[data-inline-type="stacked"] .inline-related h3 {
         padding: 10px;
         border-top-width: 0;
@@ -792,7 +894,11 @@ input[type="submit"], button {
 
     .inline-group[data-inline-type="stacked"] div.add-row {
         margin-top: 15px;
+<<<<<<< HEAD
         border: 1px solid var(--hairline-color);
+=======
+        border: 1px solid #eee;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         border-radius: 4px;
     }
 
@@ -886,7 +992,13 @@ input[type="submit"], button {
     }
 
     .login .form-row label {
+<<<<<<< HEAD
         margin: 0 0 5px;
+=======
+        display: block;
+        margin: 0 0 5px;
+        padding: 0;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         line-height: 1.2;
     }
 
@@ -894,7 +1006,11 @@ input[type="submit"], button {
         padding: 15px 0 0;
     }
 
+<<<<<<< HEAD
     .login br {
+=======
+    .login br, .login .submit-row label {
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         display: none;
     }
 
@@ -962,7 +1078,11 @@ input[type="submit"], button {
     }
 
     .timelist a {
+<<<<<<< HEAD
         background: var(--body-bg);
+=======
+        background: #fff;
+>>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
         padding: 4px;
     }
 
