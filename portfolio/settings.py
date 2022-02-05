@@ -42,9 +42,10 @@ LOGGING = {
 SECRET_KEY = '*^cov*mlo_cf*0eu90tixz@#6^9e#uw8j%&neism_+7kq%&%#d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://erik-halenkamp.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://erik-halenkamp.herokuapp.com',
+                 '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -139,11 +140,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', '')
 
 WEBPACK_LOADER = {
-  'DEFAULT': {
-    'BUNDLE_DIR_NAME': 'portfolio/static/dist/',
-    'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
-  }
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'portfolio/static/dist/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
+    }
 }
 django_heroku.settings(locals())
