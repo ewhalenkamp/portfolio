@@ -28,12 +28,8 @@
         timezoneWarningClass: 'timezonewarning', // class of the warning for timezone mismatch
         timezoneOffset: 0,
         init: function() {
-<<<<<<< HEAD
-            const serverOffset = document.body.dataset.adminUtcOffset;
-=======
             const body = document.getElementsByTagName('body')[0];
             const serverOffset = body.dataset.adminUtcOffset;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
             if (serverOffset) {
                 const localOffset = new Date().getTimezoneOffset() * -60;
                 DateTimeShortcuts.timezoneOffset = localOffset - serverOffset;
@@ -52,12 +48,8 @@
         },
         // Return the current time while accounting for the server timezone.
         now: function() {
-<<<<<<< HEAD
-            const serverOffset = document.body.dataset.adminUtcOffset;
-=======
             const body = document.getElementsByTagName('body')[0];
             const serverOffset = body.dataset.adminUtcOffset;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
             if (serverOffset) {
                 const localNow = new Date();
                 const localOffset = localNow.getTimezoneOffset() * -60;

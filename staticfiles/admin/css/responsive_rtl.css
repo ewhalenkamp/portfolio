@@ -23,15 +23,9 @@
     [dir="rtl"] .change-list .filtered .paginator,
     [dir="rtl"] .filtered #toolbar,
     [dir="rtl"] .filtered div.xfull,
-<<<<<<< HEAD
-    [dir="rtl"] .filtered .actions,
-    [dir="rtl"] #changelist-filter {
-        margin-left: 0;
-=======
     [dir="rtl"] .filtered .actions {
         margin-right: 0;
         margin-left: 230px;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     }
 
     [dir="rtl"] .inline-group ul.tools a.add,
@@ -69,8 +63,6 @@
 /* MOBILE */
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
-=======
     [dir="rtl"] .change-list .filtered .results,
     [dir="rtl"] .change-list .filtered .paginator,
     [dir="rtl"] .filtered #toolbar,
@@ -79,7 +71,6 @@
         margin-left: 0;
     }
 
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     [dir="rtl"] .aligned .related-lookup,
     [dir="rtl"] .aligned .datetimeshortcuts {
         margin-left: 0;
@@ -89,12 +80,4 @@
     [dir="rtl"] .aligned ul {
         margin-right: 0;
     }
-<<<<<<< HEAD
-
-    [dir="rtl"] #changelist-filter {
-        margin-left: 0;
-        margin-right: 0;
-    }
-=======
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }

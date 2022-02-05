@@ -17,35 +17,18 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/portfolio/site.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*^cov*mlo_cf*0eu90tixz@#6^9e#uw8j%&neism_+7kq%&%#d'
+SECRET_KEY = '*^cov*mlo_cf*0eu90tixz@#6^9e#uw8j%&neism_+7kq%&%' + '#d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://erik-halenkamp.herokuapp.com',
-                 '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://erik-halenkamp.herokuapp.com', 'http://portfolio-dev.us-west-1.elasticbeanstalk.com/',
+                 '127.0.0.1', 'http://localhost']
 
 # Application definition
 

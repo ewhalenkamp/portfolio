@@ -22,31 +22,11 @@
 }
 
 .selector-available h2, .selector-chosen h2 {
-<<<<<<< HEAD
-    border: 1px solid var(--border-color);
-=======
     border: 1px solid #ccc;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px 4px 0 0;
 }
 
 .selector-chosen h2 {
-<<<<<<< HEAD
-    background: var(--primary);
-    color: var(--header-link-color);
-}
-
-.selector .selector-available h2 {
-    background: var(--darkened-bg);
-    color: var(--body-quiet-color);
-}
-
-.selector .selector-filter {
-    border: 1px solid var(--border-color);
-    border-width: 0 1px;
-    padding: 8px;
-    color: var(--body-quiet-color);
-=======
     background: #79aec8;
     color: #fff;
 }
@@ -62,7 +42,6 @@
     border-width: 0 1px;
     padding: 8px;
     color: #999;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-size: 10px;
     margin: 0;
     text-align: left;
@@ -87,11 +66,7 @@
 .selector ul.selector-chooser {
     float: left;
     width: 22px;
-<<<<<<< HEAD
-    background-color: var(--selected-bg);
-=======
     background-color: #eee;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 10px;
     margin: 10em 5px 0 5px;
     padding: 0;
@@ -116,11 +91,7 @@
     text-indent: -3000px;
     overflow: hidden;
     cursor: default;
-<<<<<<< HEAD
-    opacity: 0.55;
-=======
     opacity: 0.3;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .active.selector-add, .active.selector-remove {
@@ -155,24 +126,14 @@ a.selector-chooseall, a.selector-clearall {
     overflow: hidden;
     font-weight: bold;
     line-height: 16px;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-    text-decoration: none;
-    opacity: 0.55;
-=======
     color: #666;
     text-decoration: none;
     opacity: 0.3;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 a.active.selector-chooseall:focus, a.active.selector-clearall:focus,
 a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
-<<<<<<< HEAD
-    color: var(--link-fg);
-=======
     color: #447e9b;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 a.active.selector-chooseall, a.active.selector-clearall {
@@ -300,11 +261,7 @@ p.datetime {
     line-height: 20px;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #666;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-weight: bold;
 }
 
@@ -312,11 +269,7 @@ p.datetime {
     white-space: nowrap;
     font-weight: normal;
     font-size: 11px;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #ccc;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .datetime input, .form-row .datetime input.vDateField, .form-row .datetime input.vTimeField {
@@ -360,11 +313,7 @@ table p.datetime {
 
 .timezonewarning {
     font-size: 11px;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #999;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 /* URL */
@@ -373,11 +322,7 @@ p.url {
     line-height: 20px;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #666;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-size: 11px;
     font-weight: bold;
 }
@@ -392,11 +337,7 @@ p.file-upload {
     line-height: 20px;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #666;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-size: 11px;
     font-weight: bold;
 }
@@ -414,11 +355,7 @@ p.file-upload {
 }
 
 span.clearable-file-input label {
-<<<<<<< HEAD
-    color: var(--body-fg);
-=======
     color: #333;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     font-size: 11px;
     display: inline;
     float: none;
@@ -431,14 +368,8 @@ span.clearable-file-input label {
     font-size: 12px;
     width: 19em;
     text-align: center;
-<<<<<<< HEAD
-    background: var(--body-bg);
-    color: var(--body-fg);
-    border: 1px solid var(--hairline-color);
-=======
     background: white;
     border: 1px solid #ddd;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -466,36 +397,20 @@ span.clearable-file-input label {
     margin: 0;
     text-align: center;
     border-top: none;
-<<<<<<< HEAD
-    font-weight: 700;
-    font-size: 12px;
-    color: #333;
-    background: var(--accent);
-=======
     background: #f5dd5d;
     font-weight: 700;
     font-size: 12px;
     color: #333;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendar th {
     padding: 8px 5px;
-<<<<<<< HEAD
-    background: var(--darkened-bg);
-    border-bottom: 1px solid var(--border-color);
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    color: var(--body-quiet-color);
-=======
     background: #f8f8f8;
     border-bottom: 1px solid #ddd;
     font-weight: 400;
     font-size: 12px;
     text-align: center;
     color: #666;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendar td {
@@ -503,30 +418,17 @@ span.clearable-file-input label {
     font-size: 12px;
     text-align: center;
     padding: 0;
-<<<<<<< HEAD
-    border-top: 1px solid var(--hairline-color);
-=======
     border-top: 1px solid #eee;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     border-bottom: none;
 }
 
 .calendar td.selected a {
-<<<<<<< HEAD
-    background: var(--primary);
-    color: var(--button-fg);
-}
-
-.calendar td.nonday {
-    background: var(--darkened-bg);
-=======
     background: #79aec8;
     color: #fff;
 }
 
 .calendar td.nonday {
     background: #f8f8f8;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendar td.today a {
@@ -538,29 +440,17 @@ span.clearable-file-input label {
     font-weight: 400;
     padding: 6px;
     text-decoration: none;
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-=======
     color: #444;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendar td a:focus, .timelist a:focus,
 .calendar td a:hover, .timelist a:hover {
-<<<<<<< HEAD
-    background: var(--primary);
-=======
     background: #79aec8;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     color: white;
 }
 
 .calendar td a:active, .timelist a:active {
-<<<<<<< HEAD
-    background: var(--header-bg);
-=======
     background: #417690;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     color: white;
 }
 
@@ -574,18 +464,6 @@ span.clearable-file-input label {
 
 .calendarnav a:link, #calendarnav a:visited,
 #calendarnav a:focus, #calendarnav a:hover {
-<<<<<<< HEAD
-    color: var(--body-quiet-color);
-}
-
-.calendar-shortcuts {
-    background: var(--body-bg);
-    color: var(--body-quiet-color);
-    font-size: 11px;
-    line-height: 11px;
-    border-top: 1px solid var(--hairline-color);
-    padding: 8px 0;
-=======
     color: #999;
 }
 
@@ -596,7 +474,6 @@ span.clearable-file-input label {
     border-top: 1px solid #eee;
     padding: 8px 0;
     color: #ccc;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendarbox .calendarnav-previous, .calendarbox .calendarnav-next {
@@ -634,13 +511,8 @@ span.clearable-file-input label {
     padding: 4px 0;
     font-size: 12px;
     background: #eee;
-<<<<<<< HEAD
-    border-top: 1px solid var(--border-color);
-    color: var(--body-fg);
-=======
     border-top: 1px solid #ddd;
     color: #333;
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 }
 
 .calendar-cancel:focus, .calendar-cancel:hover {

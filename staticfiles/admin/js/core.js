@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Core JavaScript helper functions
-=======
 // Core javascript helper functions
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
 'use strict';
 
 // quickElement(tagType, parentReference [, textInChildNode, attribute, attributeValue ...]);
@@ -89,15 +85,6 @@ function findPosY(obj) {
         return (this.getSeconds() < 10) ? '0' + this.getSeconds() : this.getSeconds();
     };
 
-<<<<<<< HEAD
-    Date.prototype.getAbbrevMonthName = function() {
-        return typeof window.CalendarNamespace === "undefined"
-            ? this.getTwoDigitMonth()
-            : window.CalendarNamespace.monthsOfYearAbbrev[this.getMonth()];
-    };
-
-=======
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
     Date.prototype.getFullMonthName = function() {
         return typeof window.CalendarNamespace === "undefined"
             ? this.getTwoDigitMonth()
@@ -106,10 +93,6 @@ function findPosY(obj) {
 
     Date.prototype.strftime = function(format) {
         const fields = {
-<<<<<<< HEAD
-            b: this.getAbbrevMonthName(),
-=======
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
             B: this.getFullMonthName(),
             c: this.toString(),
             d: this.getTwoDigitDate(),

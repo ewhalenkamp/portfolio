@@ -218,19 +218,12 @@
             // instantiate a new SelectFilter instance for it.
             if (typeof SelectFilter !== 'undefined') {
                 $('.selectfilter').each(function(index, value) {
-<<<<<<< HEAD
-                    SelectFilter.init(value.id, this.dataset.fieldName, false);
-                });
-                $('.selectfilterstacked').each(function(index, value) {
-                    SelectFilter.init(value.id, this.dataset.fieldName, true);
-=======
                     const namearr = value.name.split('-');
                     SelectFilter.init(value.id, namearr[namearr.length - 1], false);
                 });
                 $('.selectfilterstacked').each(function(index, value) {
                     const namearr = value.name.split('-');
                     SelectFilter.init(value.id, namearr[namearr.length - 1], true);
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
                 });
             }
         };
@@ -290,19 +283,12 @@
             // If any SelectFilter widgets were added, instantiate a new instance.
             if (typeof SelectFilter !== "undefined") {
                 $(".selectfilter").each(function(index, value) {
-<<<<<<< HEAD
-                    SelectFilter.init(value.id, this.dataset.fieldName, false);
-                });
-                $(".selectfilterstacked").each(function(index, value) {
-                    SelectFilter.init(value.id, this.dataset.fieldName, true);
-=======
                     const namearr = value.name.split('-');
                     SelectFilter.init(value.id, namearr[namearr.length - 1], false);
                 });
                 $(".selectfilterstacked").each(function(index, value) {
                     const namearr = value.name.split('-');
                     SelectFilter.init(value.id, namearr[namearr.length - 1], true);
->>>>>>> 1c18e0e49f77a80d73ea45ef5644f6102c0a78ee
                 });
             }
         };
